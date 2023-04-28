@@ -142,14 +142,23 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- Legfiatalabb versenyző -->
-
-                <!-- Legidősebb versenyző -->
-
-                <!-- Legtöbb Grand Prix -->
-
-
+        <section>
+            <div class="row">
+                <div class="col-sm bg-black">
+                    <h3 class="bg-dark p-2 col-sm-12 text-center">Legfiatalabb versenyző</h3>
+                    <img src="img/max_verstappen.jpg" alt="Max Verstappen" class="w-100">
+                    max_verstappen.jpg     Max Verstappen
+                    Max Verstappen 2015-ben 17 éves és 166 napos korában indult az Osztrák nagydíjon.</div>
+                <div class="col-sm bg-black"> <h3 class="bg-dark p-2 col-sm-12 text-center">Legidősebb versenyző</h3>
+                    <img src="img/louis_chiron.jpg" alt="Louis Chiron" class="w-100">
+                    louis_chiron.jpg     Louis Chiron
+                    Louis Chiron 58 évesen és 288 naposan állt rajthoz 1958-ban Monacoban.</div>
+                <div class="col-sm bg-black"><h3 class="bg-dark p-2 col-sm-12 text-center">Legtöbb Grand Prix</h3>
+                    <img src="img/monza_info.jpg" alt="Monza" class="w-100">
+                    monza_info.jpg      Monza
+                    1950 óta a legtöbb versenyt az olaszországi Monzában rendezték.</div>
+            </div>
+        </section>
             </div>
         </section>
 
@@ -168,11 +177,12 @@
                             <option value="HUN">Hungaroring</option>
                             <option value="MON">Monaco</option>
                             <option value="BEL">Spa-Francorchamps</option>
+                            <option value="ITA">Monza</option>
                         </select>
                     </div>
                     <div class="form-group">
                         <label for="laptime">1 kör ideje (másodpercben)</label>
-                        <input type="text" class="form-control" id="laptime" placeholder="pl.: 105.954" oninput="calculate()">
+                        <input type="number" class="form-control" id="laptime" placeholder="pl.: 105.954" oninput="calculate()">
                     </div>
 
                     <div class="form-group">
@@ -182,11 +192,13 @@
                 </form>
 
                 <script>
+                    showCircuit()
                 </script>
 
             </div>
 
         </section>
+
     </main>
 
     <audio id="f1sound">
@@ -194,7 +206,7 @@
     </audio>
 
     <footer class="text-right p-2">
-        Források: http://formula.uw.hu/f1tortenet.html, https://en.wikipedia.org/wiki/List_of_Formula_One_driver_records
+        Források: <a href="http://formula.uw.hu/f1tortenet.html">F1 történet</a> <a href="https://en.wikipedia.org/wiki/List_of_Formula_One_driver_records">Wikipédia</a>
     </footer>
 
 
